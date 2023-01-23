@@ -21,7 +21,7 @@ function EventDetailPage() {
   if (!event) {
     return (
       <ErrorAlert>
-        <p>No event found</p>
+        <p>No event found!</p>
       </ErrorAlert>
     )
   }
