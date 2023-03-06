@@ -1,9 +1,9 @@
 import { useRef } from "react"
 
 import Button from "../ui/button"
-import classes from "./event-search.module.css"
+import classes from "./events-search.module.css"
 
-function EventSearch(props) {
+function EventsSearch(props) {
   const yearInputRef = useRef()
   const monthInputRef = useRef()
 
@@ -27,8 +27,8 @@ function EventSearch(props) {
           </select>
         </div>
         <div className={classes.control}>
-          <label htmlFor="Month">Month</label>
-          <select id="Month" ref={monthInputRef}>
+          <label htmlFor="month">Month</label>
+          <select id="month" ref={monthInputRef}>
             <option value="1">January</option>
             <option value="2">February</option>
             <option value="3">March</option>
@@ -37,7 +37,7 @@ function EventSearch(props) {
             <option value="6">June</option>
             <option value="7">July</option>
             <option value="8">August</option>
-            <option value="9">September</option>
+            <option value="9">Septemer</option>
             <option value="10">October</option>
             <option value="11">November</option>
             <option value="12">December</option>
@@ -49,4 +49,4 @@ function EventSearch(props) {
   )
 }
 
-export default EventSearch
+export default EventsSearch

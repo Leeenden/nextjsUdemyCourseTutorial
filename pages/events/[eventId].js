@@ -1,17 +1,14 @@
-//core imports
 import { Fragment } from "react"
-// component imports
+
+import { getEventById, getFeaturedEvents } from "../../helpers/api-util"
 import EventSummary from "../../components/event-detail/event-summary"
 import EventLogistics from "../../components/event-detail/event-logistics"
 import EventContent from "../../components/event-detail/event-content"
-//dummy data import
-import { getEventById, getFeaturedEvents } from "../../helpers/api-util"
 import ErrorAlert from "../../components/ui/error-alert"
 
-// define function
 function EventDetailPage(props) {
   const event = props.selectedEvent
-  // check for NOT truthy
+
   if (!event) {
     return (
       <div className="center">

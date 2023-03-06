@@ -1,5 +1,5 @@
 import { getFeaturedEvents } from "../helpers/api-util"
-import EventList from "../components/event/event-list"
+import EventList from "../components/events/events-list"
 
 function HomePage(props) {
   return (
